@@ -115,7 +115,7 @@ if(month.value==""){
 if(year.value==""){
     event.preventDefault(); 
     miss_date.style.color ='red'
-    miss_date.textContent='Veuillez choisir une année de naissance';
+    miss_date.textContent='Veuillez entrez une date de naissance';
     
 }
 

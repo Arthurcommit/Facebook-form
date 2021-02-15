@@ -126,18 +126,21 @@ if($AfficherFormulaire==1){
 	    <div id="intro3" class="fb-body">C'est gratuit (et ça le restera toujours)</div>
 	    <div id="form3" class="fb-body">
             <div> 
+                <div>
                 <input placeholder="Prénom" type="text" id="firstname" name="firstname" required>
                 <input placeholder="Nom de famille" type="text" id="lastname" name="lastname" required>
-                <br /><span id="missprenom"></span>
-                <span id="missnom"></span>
-            </div>  
+                </div>
+                <div id="nomprenom"> 
+                    <div id="missprenom"> </div> 
+                    <div id="missnom"> </div> 
+                </div>
+            </div>   
             <input placeholder="Email" id="mail" type="text" name="mail" required><div id="missmail"></div>
             <input placeholder="Confirmer votre email" type="text" id="confirm_mail" name="confirm_mail" required><div id="missconfirm_mail"></div>
             <input placeholder="Nouveau mot de passe" type="password" id="mdp" name="mdp" required><div id="missmdp"></div>
                <p>Date de naissance</p> 
-                <!-- option value = valeur que l'on va envoyer sur le serveur quand un formulaire est soumis-->
                 <div>
-                    <select name="jour" id="day"> 
+                    <select name="jour" id="day" required> 
                         <option value="">Jour</option>
                         <?php 
                         for($i=0;$i<31;$i++) 
@@ -148,18 +151,22 @@ if($AfficherFormulaire==1){
                         }
                         ?>
                     </select>
-                    <select name="mois" id="month">
-                        <option value="">Mois</option>
-                        <?php
-                        for($i=0;$i<12;$i++)
-                        {
-                            ?>
-                            <option value="<?php echo $i+1;?>"> <?php echo $i+1; ?> </option>
-                            <?php
-                        }
-                        ?>               
-                    </select>    
-                    <select name="annee" id="year"><br>
+                    <select name="mois" id="month" required>  
+                        <option value="" >Mois</option>
+                        <option value="1">Janvier</option>
+                        <option value="2">Février</option>
+                        <option value="3">Mars</option>
+                        <option value="4">Avril</option>
+                        <option value="5">Mai</option>
+                        <option value="6">Juin</option>
+                        <option value="7" >Juillet</option>
+                        <option value="8">Aout</option>
+                        <option value="9">Septembre</option>
+                        <option value="10">Octobre</option>  
+                        <option value="11">Novembre</option> 
+                        <option value="12">Décembre</option>
+                    </select>
+                    <select name="annee" id="year" required><br>
                         <option value="">Année</option>
                         <?php
                         for($i=1899;$i<2021;$i++)
@@ -184,7 +191,7 @@ if($AfficherFormulaire==1){
         </div>
     </div>  
 </form>
-<script src="test.js"></script>  
+ 
 
  
 <?php
