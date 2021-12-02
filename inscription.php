@@ -101,7 +101,6 @@ if(!$mysqli) {
 <html>
     <head>
         <link type="text/css" rel="stylesheet" href="style.css" />
-        <script src="test.js"></script>
         <meta name="viewport" content="minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, width=device-width, shrink-to-fit=no"/>
     </head>
     <body>
