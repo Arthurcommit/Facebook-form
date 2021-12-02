@@ -1,61 +1,71 @@
-
-.fb-header-base{
-	width:100%;
-	height:90px;
-	position:absolute;
-	top:0;
-	left:0;
-	color:white;
-	z-index:7;
-	font-family:verdana;
-	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-}
-.fb-header{
-	width:100%;
-	height:90px;
-	position:absolute;
+.fb-header {
+	width:43%;
+	height: 150px;
+	display: flex;
+	justify-content: space-around;
 	background:#3d5b99;
-	top:0;
-	left:0;
 	color:white;
-	z-index:7;
 	font-family:verdana;
 }
-#form1{ /* le diez pour un id */
-	left:750px;
-	height:60px;
-	width:180px;
-	top:20px;
+
+.fb-header input {
+	margin-right: 10px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 53px ;
+}
+
+#form1 { 
+	display: flex;
+	align-items: center;
+	font-family:verdana;
+	font-size:10px;
+	margin-left: 4px;
+}
+
+#form2 { 
+	display: flex;
+	align-items: center;
 	font-family:verdana;
 	font-size:10px;
 }
-#form2{ 
-	left:940px;
-	height:60px;
-	width:250px;
-	top:20px;
-	font-family:verdana;
-	font-size:10px;
+
+.font {
+	font-size: 9.5px;
 }
-.submit1{  /*le point est une class */
-	left:1130px;
-	top:35px;
-	position:absolute;
+
+#form3 {
+	display: flex;
+	align-items: center;
+
+	font-family:verdana;
+	font-size:10px;	
+}
+
+.submit1 {
 	background:#5b7bc0;
+	cursor: pointer;
+	color: white;
+}
+
+.fb-body {
+	display: flex;
 	color:white;
-	z-index:20;
-	height:20px;
-	width:100px;
-	cursor:pointer;	
+	font-family:verdana;
 }
-.fb-body{
-	position:absolute;
-	left:0px;
-	top:90px;
-	width:100%;
-	height:645px;
+
+#form4 {
+	font-family:verdana;
+	font-size:14px;
+	color:#142170;
+	width: 43%;
 }
-#intro1{
+
+#intro1 {
 	left:178px;
 	top:20px;
 	font-family:verdana;
@@ -64,42 +74,33 @@
 	height:75px;
 	width:550px;
 }
-#intro2{
-	left:750px;
-	top:20px;
+
+#intro2 {
+
 	font-family:verdana;
 	font-size:20px;
 	color:#000;
 	font-weight:bold;
-	height:75px;
-	width:500px;
+	margin-bottom: 20px;
+} 
+
+#intro3 {
+	font-family:verdana;
+	font-size:16px;
+	color:#000;
+	margin-bottom: 20px;
 }
-#img2{
+
+#img2 {
 	top:130px;
 	left:178px;
 	width:537px;
 	height:195px;
 }
-#intro3{
-	left:750px;
-	top:70px;
-	font-family:verdana;
-	font-size:16px;
-	color:#000;
-	height:50px;
-	width:300px;
-}
-#form3{
-	top:120px;
-	left:750px;
-	font-family:verdana;
-	font-size:14px;
-	color:#142170;
-	width:450px;
-	height:495px;
-}
+
+
 #firstname, #lastname {
-	width:200px;
+	width:100%;
 	height:40px;
 	border-radius:5px 5px 5px 5px;
 	background:white;
@@ -110,7 +111,8 @@
 	border-style:solid;
 	border-color: gray;
 }
-#day, #month, #year{
+
+#day, #month, #year {
 	width:80px;
 	height:30px;
 	border-radius:5px 5px 5px 5px;
@@ -122,8 +124,9 @@
 	border-style:solid;
 	border-color: gray;
 }
-#mailbox, #mail, #confirm_mail, #mdp{
-	width:408px;
+
+#mailbox, #mail, #confirm_mail, #mdp {
+	width:100%;
 	height:40px;
 	border-radius:5px 5px 5px 5px;
 	background:white;
@@ -134,12 +137,14 @@
 	border-style:solid;
 	border-color: gray;
 }
-#r-b{
+
+#r-b {
 	font-size:12px;
 	height:15px;
 	width:15px;
 }
-.button2{
+
+.button2 {
 	width:250px;
 	height:40px;
 	left:750px;
@@ -155,30 +160,111 @@
 	cursor:pointer;
 	outline:none;
 }
-#intro4{
+
+#intro4 {
 	font-family:verdana;
 	font-size:12px;
 	color:gray;	
 }
-#intro5{
+
+#intro5 {
 	font-family:verdana;
 	font-size:14px;
 	color:gray;
 }
-#fb-body-footer-base{
+
+#fb-body-footer-base {
 	width:900px;
 	top:15px;
 	left:200px;
 	color:blue;
 	height:60px;
 }
-#nomprenom{
-	display:flex;
+
+.font-size {
+	font-size: 8px;
+	padding-right: 22px;
 }
-#missprenom{
-	width: 200px;
+
+.green-btn {
+	text-align: center;
 }
-#missnom{
-	width: 200px;
-	padding-left: 5px;
+
+
+
+
+/********************************************* MEDIA QUERIES **************************************/
+
+
+@media (max-width: 1024px) {
+	.fb-header {
+		width:100%;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+
+@media screen and (max-width: 540px) {
+	#form4{
+		font-family:verdana;
+		font-size:14px;
+		color:#142170;
+		width: 100%;
+	}
+
+	#intro4 {
+		width: auto;	
+	}
+
+	.center-element {
+		text-align: center;
+	}
+
+	.font {
+		width: 102%;
+	}
+}
+
+
+
+@media all and (min-width: 541px) and (max-width: 1024px) {
+
+
+	.center-element {
+		text-align: center;
+	}
+
+	#form4{
+		font-family:verdana;
+		font-size:14px;
+		color:#142170;
+		width: 100%;
+	}
+
+	#form4{
+		font-family:verdana;
+		font-size:14px;
+		color:#142170;
+		width: 100%;
+
+	}
+
+	#firstname, #lastname, #mail, #confirm_mail, #mdp {
+		width: 50%;
+		height: 40px;
+		border-radius: 5px 5px 5px 5px;
+		background: white;
+		padding: 10px;
+		font-size: 18px;
+		margin-top: 8px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: gray;
+	}
+	.replace {
+		text-align: center;
+	}
+
 }
