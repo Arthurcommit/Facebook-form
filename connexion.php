@@ -1,20 +1,16 @@
 <?php
-/*
-Page: connexion.php
-*/
+/* Page: connexion.php */
 session_start(); 
-if(isset($_POST['connexion'])) { // si le bouton "Connexion" est appuyé
-    // on vérifie que le champ "mail" n'est pas vide
-    // empty vérifie à la fois si le champ est vide et si le champ existe (is set)
-    if(empty($_POST['mail'])) {
-        echo "Le champ mail est vide.";
+if(isset($_POST['connexion'])) { // si le bouton "Connexion" est cliqué
+    if(empty($_POST['mail'])) { // empty vérifie à la fois si le champ est vide et si le champ existe (isset)
+        echo "Le champ mail est vide."; // on vérifie que le champ "mail" n'est pas vide
     } else {
-        // on vérifie maintenant si le champ "Mot de passe" n'est pas vide"
+        // on vérifie maintenant si le champ "Mot de passe" n'est pas vide
         if(empty($_POST['mdp'])) {
             echo "Le champ Mot de passe est vide.";
         } else {
 
-            // $_post permet de récuperer dans la BDD les infos soumises dans le formulaire
+            // $_post permet de récuperer dans la database les infos soumises dans le formulaire
             $mail = $_POST["mail"]; 
             $MotDePasse = $_POST["mdp"]; 
            
