@@ -1,4 +1,6 @@
-Les étapes à réaliser : 
+Voici un formulaire d'inscription et de connexion d'une page d'accueil Facebook en HTML, CSS, Javascript et PHP.
+
+Les étapes à réaliser afin d'enregistrer un membre dans la base de données : 
 
 - Lancer le serveur.
 - Se connecter sur phpmyadmin.
