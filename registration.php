@@ -3,7 +3,7 @@
     // database log in:
     $BDD = array();
     $BDD['host'] = "localhost";
-    $BDD['user'] = "root";
+    $BDD['user'] = "root1";
     $BDD['pass'] = "ROOT";
     $BDD['db'] = "test1";
     $mysqli = mysqli_connect($BDD['host'], $BDD['user'], $BDD['pass'], $BDD['db']);
@@ -137,7 +137,7 @@
                 <div id="form4" >
                     <div> 
                         <div class="center-element">
-                            <div id="intro2">Registration</div> 
+                            <div id="intro2">Sign up</div> 
                             <div id="intro3">It's free (and always will be)</div>
                         </div>
                         <div class="replace" >
@@ -225,7 +225,7 @@
                         You will be able to receive text notifications from Facebook and can unsubscribe at any time.
                         </p>
                     <div class="green-btn">
-                        <input type="submit" id="btnregistration" class="button2" name="bouton" value="Registration" />
+                        <input type="submit" id="btnregistration" class="button2" name="bouton" value="Sign up" />
                     </div>
                 </div>
             </div>  
